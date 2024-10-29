@@ -28,14 +28,20 @@ export async function POST(req: Request) {
       });
     }
 
-    // const existUser = { name, password, fullInfo };
+    const filteredUser = data.users.filter(
+      (user: { name: string; password: string }) =>
+        user.name === name && user.password === password
+    );
 
-    const fillteredUser = data.users.filter(
-        (user: { name: string; password: string }) =>
-          user.name === name && user.password === password
-      )[0];
+    if (filteredUser.length === 0) {
+      return new Response(JSON.stringify({ error: "name yoki parol xato" }), {
+        status: 400,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
 
-      const token = fillteredUser.token
+    const token = filteredUser[0].token;
+    console.log(filteredUser[0]);
 
     return new Response(JSON.stringify({ token }), {
       status: 200,
