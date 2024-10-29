@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "bleble",
+      "password": "salom",
+      "fullInfo": {
+        "fullName": "Muhammadhakim",
+        "age": 15
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmxlYmxlIiwiaWF0IjoxNzMwMjAyNzAxLCJleHAiOjE3MzAyMDYzMDF9.K4XeQLi1NTUfgrx9c6OplMcutBOEtMz8aqm9VCsLOiI"
+    }
+  ],
+  "admins": {
+    "name": "admin",
+    "password": "admin**",
+    "fullInfo": {
+      "fullName": "Haqiqiy",
+      "age": 15
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FzYXNhIiwiaWF0IjoxNzMwMjAyODQyLCJleHAiOjE3MzAyMDY0NDJ9.olxAL8461KjW-8Wnjxa2Ppg3OX1ecxXYj4gkmtdkODE"
+  }
+}

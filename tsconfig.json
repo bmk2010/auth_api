@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ES2020",                      // Allows modern JavaScript features, often useful with Node.js
+    "lib": ["dom", "dom.iterable", "esnext"], // Includes support for DOM and ESNext features
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "module": "ESNext",                       // Suitable for modern ES modules
+    "moduleResolution": "node",               // Node.js compatible resolution for imports
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
