@@ -26,5 +26,5 @@ export function middleware(req: NextRequest) {
 
 // Middleware faqat `/api` route'lari uchun ishlatiladi
 export const config = {
-  matcher: '/api/:path*',
+  matcher: '/app/api/:path*',
 };
